@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Etherscan.io on 2020-10-19
+*/
+
 pragma solidity ^0.4.24;
 
 library SafeMath {
@@ -27,7 +31,7 @@ contract Owned {
     event OwnershipTransferred(address indexed _from, address indexed _to);
 
     constructor() public {
-        owner = 0x66D5a36CAB6CCf3FB4630Bd8080bc47F7d0016D8;
+        owner = 0xEE8Cf459bF6a0DDF3d9446b161ADc58B7A3ABa4b;
     }
 
     modifier onlyOwner {
@@ -84,7 +88,7 @@ contract PeacockFinance is ERC20Interface, Owned {
         symbol = "PCKF";
         name = "Peacock Finance";
         decimals = 18;
-        _totalSupply = 500000 * 10**uint(decimals);
+        _totalSupply = 520000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
         DENOMINATOR = 1000000000000000000;       
         emit Transfer(address(0), owner, _totalSupply);
